@@ -1,0 +1,30 @@
+.memory-match-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.memory-card {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.memory-card.flipped {
+  background-color: #4caf50;
+  color: #fff;
+  transform: scale(1.1);
+}
